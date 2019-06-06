@@ -1,3 +1,8 @@
+*{
+	margin: 0;
+	padding:0;
+}
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap');
 .wrapper_bg-fon{
 	display: flex;
     justify-content: center;
@@ -10,9 +15,52 @@
     background: url(../img/bgfon@2x.jpg) no-repeat center center fixed;
     background-size: cover;
     & .wrapper_bg-fon__formCenter{
+    	width: 580px;
 		border-radius: 3px;
 		border: 1px solid #ffffff;
-		background-color: #f5fbff;
-		opacity: 0.7;
+		background-color: #f5fbffd9;
+		& .wrappTab{
+			display:flex;
+			& div{
+			padding: 9px 0 4px 16px;
+			width:33.3333%;
+			color: #feffff;
+			font-family: Ubuntu;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 24px;
+			text-transform: uppercase;
+			border: 1px solid #e2e9f0;
+			background-color: #1fbcbd;
+			background-image: linear-gradient(to top, rgba(9, 174, 174, 0) 0%, rgba(18, 54, 66, 0.4) 50%, rgba(49, 224, 224, 0.8) 100%);
+			opacity: 0.6;
+			}
+			& div:first-child{
+				opacity: 1;
+			}
+		}
+		& form .top_form-input, .bottom_form-input{
+			display: flex;
+			
+		}
+		& form .top_form-input{
+			margin: 22px 0px 34px 25px;
+			& .form-group{
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+			margin-right: 25px;
+			& input{
+				height: 28px;
+				border-radius: 3px;
+				background-color: #ffffff;
+				border:1px solid #00BC87;
+			}
+		  }
+		  & .form-group:first-child{
+		  	margin-right: 46px;
+		  }
+	  }
+
     }
 }
