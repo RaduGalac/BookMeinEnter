@@ -18,7 +18,7 @@
     	width: 580px;
 		border-radius: 3px;
 		border: 1px solid #ffffff;
-		background-color: #f5fbffd9;
+		background-color: #f5fbffc9;
 		& .wrappTab{
 			display:flex;
 			& div{
@@ -56,11 +56,50 @@
 				background-color: #ffffff;
 				border:1px solid #00BC87;
 			}
+			& label{
+			opacity: 0.65;
+			color: #123642;
+			font-family: Ubuntu;
+			font-size: 13px;
+			font-weight: 600;
+			line-height: 24px;
+			margin-bottom: 8px;
+			}
 		  }
 		  & .form-group:first-child{
 		  	margin-right: 46px;
 		  }
 	  }
-
+	  & form .bottom_form-input{
+	  	display: flex;
+	  	justify-content: space-between;
+	  	margin-left: 27px;
+	  	margin-right: 25px;
+	  	margin-bottom: 29px;
+	  	& label{
+	  		opacity: 0.65;
+			color: #123642;
+			font-family: Ubuntu;
+			font-size: 13px;
+			font-weight: 600;
+			line-height: 24px;
+			margin-bottom: 8px;
+			padding-top: 20px;
+	  	}
+	  	& .btn-send{
+	  		border:none;
+			box-shadow: 0 3px 13px 3px rgba(18, 54, 66, 0.16);
+			border-radius: 3px;
+			background-color: #1fbcbd;
+			background-image: linear-gradient(to top, rgba(9, 174, 174, 0) 0%, rgba(18, 54, 66, 0.4) 50%, rgba(49, 224, 224, 0.8) 100%);
+			color: #ffffffb5;
+			font-family: Ubuntu;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 24px;
+			padding: 5px 46px 3px 40px;
+			box-sizing: padding-box; 
+	  	}
+	  }
     }
 }
