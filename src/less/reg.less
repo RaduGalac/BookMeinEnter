@@ -3,7 +3,7 @@
 	padding:0;
 }
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap');
-.wrapper_bg-fon{
+.bg--fon{
 	display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: url(../img/bgfon@2x.jpg) no-repeat center center fixed;
+    background: url(../img/bgreg@2x.jpg) no-repeat center center fixed;
     background-size: cover;
     & .wrapper_bg-fon__formCenter{
     	width: 580px;
@@ -39,13 +39,40 @@
 				opacity: 1;
 			}
 		}
-		& form .top_form-input, .bottom_form-input{
+		& form .top_form-input, .bottom_form-input, .middel_form-input{
 			display: flex;
 			
 		}
-		& form .top_form-input{
-			margin: 22px 0px 34px 25px;
+		& form .top--input{
+			margin: 22px 0px 10px 25px;
 			& .form-group{
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+			margin-right: 25px;
+			& input{
+				height: 28px;
+				border-radius: 3px;
+				background-color: #ffffff;
+				border:1px solid #00BC87;
+			}
+			& .top--input__label{
+			opacity: 0.65;
+			color: #123642;
+			font-family: Ubuntu;
+			font-size: 13px;
+			font-weight: 600;
+			line-height: 24px;
+			margin-bottom: 2px;
+			}
+		  }
+		  & .form-group:first-child{
+		  	margin-right: 46px;
+		  }
+	  }
+	  & form .middel_form-input {
+	  	margin: 0px 0px 25px 25px;
+	  		& .form-group{
 			display: flex;
 			flex-direction: column;
 			width: 50%;
@@ -86,7 +113,8 @@
 			margin-bottom: 8px;
 			padding-top: 20px;
 	  	}
-	  	& .btn{
+	  	& .btn-singin{
+	  		height: 29px;
 	  		border:none;
 			box-shadow: 0 3px 13px 3px rgba(18, 54, 66, 0.16);
 			border-radius: 3px;
@@ -97,8 +125,20 @@
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 24px;
-			padding: 5px 46px 3px 40px;
-			box-sizing: padding-box; 
+			padding: 0px 43px 0px 38px;
+	  	}
+	  		& .Sign_Up{
+	  		height: 30px;
+	  		border:none;
+			box-shadow: 0 3px 13px 3px rgba(18, 54, 66, 0.16);
+			border-radius: 3px;
+			background-color: #fff;
+			color: #123642;
+			font-family: Ubuntu;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 24px;
+			padding: 0px 43px 0px 38px;
 	  	}
 	  }
     }
